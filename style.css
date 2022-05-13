@@ -1,8 +1,11 @@
+
 body {
   font-family: "Poppins";
   max-width: 1400px;
-  /*  position: absolute;
-    left: -1; */
+
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 h1 {
@@ -35,12 +38,12 @@ p {
   }
 }
 
+
 .hello {
   display: flex;
   gap: 15px;
 }
 
-/* Navigation Bar */
 .navbar {
   padding: 0 0 4rem;
 }
@@ -68,6 +71,11 @@ p {
 .row {
   display: flex;
 }
+#topBar {
+  display:flex;
+  justify-content: space-around;
+}
+
 @media screen and (max-width: 700px) {
   .row {
     display: block;
@@ -94,6 +102,8 @@ p {
   width: auto;
   padding: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 80px;
   margin-top: 70px;
 }
@@ -105,6 +115,9 @@ p {
 }
 #p1 {
   // margin-left: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -115,22 +128,23 @@ p {
     width: auto;
   }
 }
+@media screen and (max-width: 700px) {
+  .feat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #p1 img {
-  margin-top: 45px;
-  margin-left: 60px;
+
   width: 80%;
 }
 
 #p2 {
+  display: flex;
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(2, 2fr);
-  margin-left: 20px;
-  padding: 30px;
-  // padding-top: 80px;
-  margin-bottom: 5px;
-  width: 35%;
+  justify-content: space-between;
+ 
 }
 #p2 img {
   margin-top: 16px;
@@ -142,10 +156,7 @@ p {
   font-family: "Poppins";
   font-size: 40px;
 }
-#p2x {
-  margin-right: 20px;
-  float: right;
-}
+
 #p21 {
   gap: 10px;
   display: flex;
@@ -174,6 +185,8 @@ p {
 #p3 {
   width: 35%;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   margin-top: 45px;
   margin-bottom: 5px;
@@ -229,6 +242,8 @@ p {
 #buy {
   display: flex;
   justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   height: 580px;
   cursor: pointer;
@@ -236,10 +251,14 @@ p {
 }
 @media screen and (max-width: 700px) {
   #buy {
-    display: block;
+    display: flex;
     height: fit-content;
     width: fit-content;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
   }
+  
 }
 #buy1 {
   height: 420px;
@@ -336,6 +355,7 @@ p {
 
 #cont1 {
   display: flex;
+  align-items: center;
   padding: 20px;
   margin-bottom: 10px;
 
@@ -344,10 +364,24 @@ p {
 }
 @media screen and (max-width: 700px) {
   #cont1 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
   }
+  #cont1 #box2{
+    width: 70%;
+  }
+  #cont1 #box3{
+    align-self: flex-start;
+    padding:0px;
+    margin: 0px;
+  }
+
+
 }
+
+
+
 #box1 {
   padding: 30px;
 
@@ -357,24 +391,17 @@ p {
 }
 
 #box2 {
-  width: 28%;
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 0;
-  margin: 10px;
+  margin-top: 10px;
+  width: 40%;
 }
 #exampleInputPassword12 {
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 0;
+  
   width: 85%;
 }
 
 #box3 {
-  padding: 10px;
-
+  padding: 5px;
   width: 20%;
-  margin: 10px;
   margin-right: 60px;
 }
 #subbt {
@@ -385,7 +412,7 @@ p {
   #subbt{
     float: none;
     width: 100%;
-    margin-left: 44px;
+    margin-left: 200px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -400,12 +427,6 @@ p {
   margin: 5px;
   padding: 5px;
 }
-/*@media screen and (max-width: 700px) {
-  #cont2 {
-    display: block;
-    height: fit-content;
-  }
-}*/
 
 #ft1 {
   padding-top: 30px;
@@ -484,7 +505,17 @@ p {
   }
 }
 
+@media screen and (max-width: 700px){
+  #cont2{
+    visibility:collapse; 
+  }
+}
+
 
 #navc a {
   margin-right: 20px;
+}
+.wrapping{
+
+  width: fit-content;
 }
